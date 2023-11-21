@@ -4,12 +4,18 @@ import Image from "next/image"
 const Navbar = () => {
     return ( 
     <nav>
+
         <div className = "logo">
-           <Image src='/logo.png' width={128} height={77}/>
+        <a href="/">
+           <Image src='/hku-logo.svg' width={350} height={100}/>
+           </a>
         </div>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/books">Book Catalogue</Link>
+
+        <div className='NavBarElements'>
+        <Link href="/">Data</Link>
+        <Link  href="/about">About</Link>
+        </div>
+
     </nav> 
     );
 }

@@ -4,7 +4,10 @@ const Layout = ({ children }) => {
     return (
         <div className="content">
             <Navbar />
+            <div className="Children">
             {children}
+            </div>
+
             <Footer />
         </div>
     );
